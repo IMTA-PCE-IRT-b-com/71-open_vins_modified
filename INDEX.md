@@ -214,6 +214,6 @@ timestamp tx ty tz qx qy qz qw
 
 ---
 
-**Date d'évaluation** : Janvier 2025  
+**Date d'évaluation** : Décembre 2025  
 **Version OpenVINS** : master branch  
 **License** : GPL-3.0 (OpenVINS Project)
