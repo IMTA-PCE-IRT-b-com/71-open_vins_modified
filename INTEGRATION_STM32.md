@@ -104,11 +104,6 @@ cd ~/workspace/open_vins/examples_integration/build
 - [ ] Profiler CPU/RAM
 - [ ] Optimiser matrices creuses
 
-##  Documentation
-
-- [Architecture VIO](../docs/vio_fusion.md) - Algorithme ESKF complet
-- [System Overview](../docs/system_overview.md) - Vue d'ensemble matériel
-- [Session Summary](SESSION_SUMMARY.md) - Résultats validation EuRoC
 
 ##  Synchronisation
 
