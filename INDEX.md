@@ -68,15 +68,7 @@ cd ~/workspace/open_vins
 python3 show_final_results.py
 ```
 
-### Option 2 : Rapport Exécutif (10 minutes)
-```bash
-# Lire le résumé Markdown
-cat RESULTS_SUMMARY.md
-# ou ouvrir dans VS Code
-code RESULTS_SUMMARY.md
-```
-
-### Option 3 : Analyse Complète (30 minutes)
+### Option 2 : Analyse Complète (30 minutes)
 ```bash
 # Lire le rapport technique complet
 cat EVALUATION_REPORT.md
@@ -84,7 +76,7 @@ cat EVALUATION_REPORT.md
 code EVALUATION_REPORT.md
 ```
 
-### Option 4 : Analyse Programmatique
+### Option 3 : Analyse Programmatique
 ```python
 import json
 
@@ -129,9 +121,6 @@ for system, metrics in sota.items():
 ---
 
 ##  Pour Aller Plus Loin
-
-### Reproduction des Résultats
-Voir **Section "Reproduction des Résultats"** dans [RESULTS_SUMMARY.md](./RESULTS_SUMMARY.md#-reproduction-des-résultats)
 
 ### Méthodologie Détaillée
 Voir **Section "Analyse Méthodologique"** dans [EVALUATION_REPORT.md](./EVALUATION_REPORT.md#-analyse-méthodologique)
