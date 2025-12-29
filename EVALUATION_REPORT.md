@@ -299,6 +299,5 @@ evo_rpe tum groundtruth.txt trajectory_estimated.txt --delta 10 --pose_relation 
 
 ---
 
-**Auteur** : Évaluation systématique sur EuRoC MAV Dataset  
 **Contact** : [GitHub OpenVINS](https://github.com/rpng/open_vins)  
 **License** : GPL-3.0 (OpenVINS project)
