@@ -1,8 +1,8 @@
-# 📚 Index des Résultats - OpenVINS sur EuRoC
+#  Index des Résultats - OpenVINS sur EuRoC
 
-## 🎯 Navigation Rapide
+## Navigation Rapide
 
-### 📊 Rapports Principaux
+###  Rapports Principaux
 
 1. **[RESULTS_SUMMARY.md](./RESULTS_SUMMARY.md)**
    - **Contenu** : Résumé exécutif avec conclusions principales
@@ -35,7 +35,7 @@
 
 ---
 
-## 📂 Structure des Résultats
+##  Structure des Résultats
 
 ```
 ~/workspace/open_vins/
@@ -70,7 +70,7 @@
 
 ---
 
-## 🚀 Démarrage Rapide
+## Démarrage Rapide
 
 ### Option 1 : Lecture Recommandée (5 minutes)
 ```bash
@@ -115,9 +115,9 @@ for system, metrics in sota.items():
 
 ---
 
-## 📊 Résultats en Un Coup d'Œil
+## Résultats en Un Coup d'Œil
 
-### 🏆 Performances Globales
+###  Performances Globales
 
 | Métrique | Valeur | Benchmark |
 |----------|--------|-----------|
@@ -134,12 +134,12 @@ for system, metrics in sota.items():
 | V1_02_medium | ⭐⭐ Moyen | 6.3 cm | 0.24% | 🏆 Excellent |
 | V1_03_difficult | ⭐⭐⭐ Difficile | 6.9 cm | 0.27% | 🏆 Excellent |
 
-### 🎯 Classification Finale
-✅ **Production Ready** - Excellent VIO (0.25% drift)
+###  Classification Finale
+ **Production Ready** - Excellent VIO (0.25% drift)
 
 ---
 
-## 🔬 Pour Aller Plus Loin
+##  Pour Aller Plus Loin
 
 ### Reproduction des Résultats
 Voir **Section "Reproduction des Résultats"** dans [RESULTS_SUMMARY.md](./RESULTS_SUMMARY.md#-reproduction-des-résultats)
@@ -155,7 +155,7 @@ Voir **Section "Comparaison État de l'Art"** dans [EVALUATION_REPORT.md](./EVAL
 
 ---
 
-## 📞 Informations Complémentaires
+##  Informations Complémentaires
 
 ### Commandes Utiles
 
@@ -201,38 +201,16 @@ timestamp tx ty tz qx qy qz qw
 - **OpenVINS** : https://github.com/rpng/open_vins
 - **EuRoC** : https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets
 
----
-
-## ✅ Checklist de Lecture
-
-**Débutant / Manager** (10 minutes)
-- [ ] Lire [RESULTS_SUMMARY.md](./RESULTS_SUMMARY.md) - Section "Résumé Exécutif"
-- [ ] Exécuter `python3 show_final_results.py`
-- [ ] Consulter "Tableau Comparatif" et "Conclusion"
-
-**Ingénieur / Chercheur** (30 minutes)
-- [ ] Lire [EVALUATION_REPORT.md](./EVALUATION_REPORT.md) complet
-- [ ] Vérifier "Méthodologie" et "Comparaison État de l'Art"
-- [ ] Analyser `results/evaluation_results.json`
-- [ ] Reproduire 1 dataset avec commandes fournies
-
-**Développeur / Intégrateur** (1 heure)
-- [ ] Parcourir Jupyter Notebook `notebooks/openvins_workflow.ipynb`
-- [ ] Tester evo sur trajectoires : `evo_traj tum ...`
-- [ ] Implémenter script d'analyse custom avec JSON
-- [ ] Tester visualisation 3D des trajectoires
 
 ---
 
-## 🎉 Conclusion
+## Conclusion
 
 **OpenVINS est Production Ready** avec :
-- ✅ Précision : **7.4 cm** (niveau ORB-SLAM3)
-- ✅ Drift : **0.25%** (Excellent VIO)
-- ✅ Robustesse : **100%** succès sur 3 niveaux de difficulté
-- ✅ Efficacité : **Temps réel CPU**
-
-**Recommandé pour** : Drones autonomes, robots mobiles, AR/VR, véhicules autonomes
+-  Précision : **7.4 cm** (niveau ORB-SLAM3)
+-  Drift : **0.25%** (Excellent VIO)
+-  Robustesse : **100%** succès sur 3 niveaux de difficulté
+-  Efficacité : **Temps réel CPU**
 
 ---
 
