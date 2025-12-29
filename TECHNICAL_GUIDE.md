@@ -1,12 +1,12 @@
 # Guide Technique OpenVINS - VIO Expliqué
 
-## 🎯 Vue d'ensemble
+##  Vue d'ensemble
 
 Ce document explique **comment fonctionne OpenVINS** au niveau technique : algorithmes, mathématiques, structure du code et concepts clés.
 
 ---
 
-## 📚 Table des matières
+##  Table des matières
 
 1. [Qu'est-ce que le VIO ?](#1-quest-ce-que-le-vio)
 2. [Concepts mathématiques fondamentaux](#2-concepts-mathématiques-fondamentaux)
@@ -760,14 +760,6 @@ P_new = P_aa - P_am · P_mm^{-1} · P_ma
 3. **Comparer algorithmes** :
    - Désactiver SLAM : `max_slam: 0`
    - Tester update fréquence : `track_frequency`
-
----
-
-## 📞 Aide et support
-
-**Questions sur le code** : Issues GitHub  
-**Concepts théoriques** : [docs.openvins.com](https://docs.openvins.com/)  
-**Paper original** : [Geneva et al., ICRA 2020](https://udel.edu/~ghuang/iros19-vins-workshop/papers/06.pdf)
 
 ---
 
