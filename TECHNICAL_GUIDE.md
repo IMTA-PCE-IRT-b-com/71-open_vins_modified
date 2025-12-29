@@ -700,7 +700,8 @@ P_new = P_aa - P_am · P_mm^{-1} · P_ma
 
 📄 **Papers fondateurs** :
 - MSCKF original : Mourikis & Roumeliotis (ICRA 2007)
-- OpenVINS : Geneva et al. (ICRA 2020)
+- Concepts théoriques : [docs.openvins.com](https://docs.openvins.com/)  
+- Paper original : [Geneva et al., ICRA 2020](https://udel.edu/~ghuang/iros19-vins-workshop/papers/06.pdf)
 
 ---
 
