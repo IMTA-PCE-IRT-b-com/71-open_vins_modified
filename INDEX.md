@@ -4,17 +4,7 @@
 
 ###  Rapports Principaux
 
-1. **[RESULTS_SUMMARY.md](./RESULTS_SUMMARY.md)**
-   - **Contenu** : Résumé exécutif avec conclusions principales
-   - **Longueur** : 232 lignes (lecture ~10 minutes)
-   - **Public** : Managers, décideurs techniques
-   - **Points clés** :
-     - Tableau comparatif des 3 datasets
-     - Comparaison avec état de l'art (ORB-SLAM3, VINS-Mono)
-     - Applications recommandées
-     - Limitations et améliorations possibles
-
-2. **[EVALUATION_REPORT.md](./EVALUATION_REPORT.md)**
+1. **[EVALUATION_REPORT.md](./EVALUATION_REPORT.md)**
    - **Contenu** : Rapport technique complet et détaillé
    - **Longueur** : 335 lignes (lecture ~30 minutes)
    - **Public** : Chercheurs, ingénieurs R&D
@@ -24,7 +14,7 @@
      - Graphiques et tableaux détaillés
      - Annexes avec commandes de reproduction
 
-3. **[results/evaluation_results.json](./results/evaluation_results.json)**
+2. **[results/evaluation_results.json](./results/evaluation_results.json)**
    - **Contenu** : Données structurées machine-readable
    - **Format** : JSON
    - **Usage** : Scripts d'analyse, visualisation, intégration CI/CD
@@ -40,7 +30,6 @@
 ```
 ~/workspace/open_vins/
 │
-├── 📄 RESULTS_SUMMARY.md              ← COMMENCER ICI (résumé)
 ├── 📄 EVALUATION_REPORT.md            ← Rapport technique complet
 ├── 📄 INDEX.md                        ← Ce fichier
 ├── 🐍 show_final_results.py           ← Script d'affichage formaté
