@@ -1,6 +1,6 @@
-# 🎯 Résumé de la session : OpenVINS + EuRoC Dataset
+#  Résumé de la session : OpenVINS + EuRoC Dataset
 
-## ✅ Objectif atteint
+##  Objectif atteint
 
 **Création d'un lecteur de dataset EuRoC fonctionnel** qui :
 - Lit les vraies données IMU et caméra du dataset Machine Hall 01
@@ -9,7 +9,7 @@
 
 ---
 
-## 🔑 Problèmes résolus
+##  Problèmes résolus
 
 ### 1. **Configuration YAML incomplète**
 ❌ **Problème** : `euroc_mono_config.yaml` créé manuellement était incomplet  
@@ -42,7 +42,7 @@
 | Images traitées | **3682** |
 | Mesures IMU | **36812** |
 | Poses estimées | **2785** |
-| Système initialisé | ✅ **OUI** |
+| Système initialisé | **OUI** |
 | Temps d'initialisation | ~24 secondes de séquence |
 
 ### Exemple de sortie
@@ -111,15 +111,15 @@ while (cam_idx < cam_data.size()) {
 
 ---
 
-## 📂 Fichiers modifiés/créés
+## Fichiers modifiés/créés
 
 ### Créés
-- ✅ `examples_integration/euroc_reader_example.cpp` (315 lignes)
-- ✅ `examples_integration/euroc_mono_config.yaml` (déprécié, utiliser config officielle)
-- ✅ `examples_integration/README.md` (documentation complète)
+-  `examples_integration/euroc_reader_example.cpp` (315 lignes)
+-  `examples_integration/euroc_mono_config.yaml` (déprécié, utiliser config officielle)
+-  `examples_integration/README.md` (documentation complète)
 
 ### Modifiés
-- ✅ `examples_integration/CMakeLists.txt` (ajout target euroc_reader_example)
+-  `examples_integration/CMakeLists.txt` (ajout target euroc_reader_example)
 
 ### Commits Git
 ```bash
@@ -131,7 +131,7 @@ git log --oneline -3
 
 ---
 
-## 🎓 Leçons apprises
+##  Leçons apprises
 
 ### Points critiques de l'API OpenVINS
 
@@ -153,27 +153,7 @@ git log --oneline -3
 
 ---
 
-## 🚀 Prochaines étapes
-
-### Validation
-- [ ] Comparer trajectoire avec ground truth EuRoC
-- [ ] Calculer RMSE ATE/RPE avec `evo` toolkit
-- [ ] Tester sur autres séquences (MH_02, V1_01, etc.)
-
-### Améliorations
-- [ ] Support stéréo complet (cam1)
-- [ ] Visualisation temps réel avec OpenCV
-- [ ] Export format TUM pour évaluation
-- [ ] Downsampling pour temps réel
-
-### Intégration b-com
-- [ ] Créer `OverviewClient` pour envoyer poses au serveur
-- [ ] Tester sur capteurs industriels réels
-- [ ] Mode streaming temps réel (non-dataset)
-
----
-
-## 📝 Commandes utiles
+##  Commandes utiles
 
 ```bash
 # Télécharger dataset
@@ -193,5 +173,3 @@ wc -l trajectory_estimated.txt
 ```
 
 ---
-
-**🎉 SUCCÈS : OpenVINS traite maintenant des données réelles avec succès !**
