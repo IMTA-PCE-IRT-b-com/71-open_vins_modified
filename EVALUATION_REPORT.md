@@ -10,10 +10,10 @@
 ## Résumé Exécutif
 
 OpenVINS démontre des **performances exceptionnelles** sur les 3 niveaux de difficulté testés :
-- ✅ **Précision absolue (APE)** : 6.3 - 9.1 cm RMSE (comparable à VINS-Mono)
-- ✅ **Drift** : 0.23 - 0.27% (classification **Excellent VIO** sur les 3 datasets)
-- ✅ **Robustesse** : Système stable du plus facile au plus difficile (dégradation minime de 2.8cm)
-- ✅ **Efficacité** : Traitement temps réel (23-37s pour 2-3.5k images)
+-  **Précision absolue (APE)** : 6.3 - 9.1 cm RMSE (comparable à VINS-Mono)
+-  **Drift** : 0.23 - 0.27% (classification **Excellent VIO** sur les 3 datasets)
+-  **Robustesse** : Système stable du plus facile au plus difficile (dégradation minime de 2.8cm)
+-  **Efficacité** : Traitement temps réel (23-37s pour 2-3.5k images)
 
 Le système est **prêt pour déploiement en production** avec des performances au niveau de l'état de l'art.
 
@@ -25,25 +25,25 @@ Le système est **prêt pour déploiement en production** avec des performances 
 
 | Dataset | Difficulté | Distance (m) | Images | APE RMSE (SE3) | RPE 10m | Drift (%) | Classification | Temps |
 |---------|-----------|-------------|--------|----------------|---------|-----------|----------------|-------|
-| **MH_01_easy** | ⭐ Facile | 80.6 | 3682 | **9.1 cm** | 2.27 cm | **0.23%** | 🏆 Excellent VIO | 37s |
-| **V1_02_medium** | ⭐⭐ Moyen | 100.2 | 2149 | **6.3 cm** | 2.40 cm | **0.24%** | 🏆 Excellent VIO | 23s |
-| **V1_03_difficult** | ⭐⭐⭐ Difficile | 149.9 | 2149 | **6.9 cm** | 2.66 cm | **0.27%** | 🏆 Excellent VIO | 28s |
+| **MH_01_easy** | ⭐ Facile | 80.6 | 3682 | **9.1 cm** | 2.27 cm | **0.23%** |  Excellent VIO | 37s |
+| **V1_02_medium** | ⭐⭐ Moyen | 100.2 | 2149 | **6.3 cm** | 2.40 cm | **0.24%** |  Excellent VIO | 23s |
+| **V1_03_difficult** | ⭐⭐⭐ Difficile | 149.9 | 2149 | **6.9 cm** | 2.66 cm | **0.27%** |  Excellent VIO | 28s |
 
 ### Barème de Classification (Drift %)
-- 🏆 **Excellent VIO**: < 0.5% (OpenVINS sur les 3 datasets)
-- ✅ **Good VIO**: 0.5% - 1.5%
-- ⚠️ **Acceptable VIO**: 1.5% - 3.0%
-- ❌ **Poor VIO**: > 3.0%
+-  **Excellent VIO**: < 0.5% (OpenVINS sur les 3 datasets)
+-  **Good VIO**: 0.5% - 1.5%
+-  **Acceptable VIO**: 1.5% - 3.0%
+-  **Poor VIO**: > 3.0%
 
 ---
 
-## 🔬 Analyse Méthodologique
+##  Analyse Méthodologique
 
 ### Métriques Utilisées
 
 #### 1. APE (Absolute Pose Error) - Précision Globale
 - **Définition**: Erreur de pose après alignement SE(3) Umeyama
-- **Formule**: $\text{APE}_i = \|\mathbf{T}_{\text{GT},i} \ominus \mathbf{S} \cdot \mathbf{T}_{\text{est},i}\|$
+- **Formule**: $$\text{APE}_i = \|\mathbf{T}_{\text{GT},i} \ominus \mathbf{S} \cdot \mathbf{T}_{\text{est},i}\|$$
 - **Alignement SE(3)**: Compense rotation/translation/échelle globales (standard académique)
 - **Justification physique**: VIO ne peut pas observer le nord magnétique (absence GPS/magnétomètre)
 - **Résultat**: RMSE entre 6.3 - 9.1 cm
@@ -62,16 +62,16 @@ Le système est **prêt pour déploiement en production** avec des performances 
 - L'**échelle** si monoculaire (ici, l'IMU résout l'échelle)
 
 **Consensus académique** :
-- ✅ **VINS-Mono** (Tsinghua, 2018) : Utilise SE(3) alignment pour APE
-- ✅ **ORB-SLAM3** (Zaragoza, 2021) : Rapport avec alignement Sim(3)/SE(3)
-- ✅ **OpenVINS** (MARS Lab, 2021) : Évaluation officielle avec evo + SE(3)
-- ✅ **TUM RGB-D** (benchmark de référence) : Recommande SE(3) pour VIO/VO
+-  **VINS-Mono** (Tsinghua, 2018) : Utilise SE(3) alignment pour APE
+-  **ORB-SLAM3** (Zaragoza, 2021) : Rapport avec alignement Sim(3)/SE(3)
+-  **OpenVINS** (MARS Lab, 2021) : Évaluation officielle avec evo + SE(3)
+-  **TUM RGB-D** (benchmark de référence) : Recommande SE(3) pour VIO/VO
 
 **Argument physique** : "L'argument du Nord magnétique est imparable" - sans capteur absolu (GPS, magnétomètre), le système ne peut pas connaître son orientation initiale par rapport au nord terrestre.
 
 ---
 
-## 🏆 Comparaison État de l'Art
+##  Comparaison État de l'Art
 
 ### APE RMSE (cm) sur EuRoC
 
@@ -91,9 +91,9 @@ Le système est **prêt pour déploiement en production** avec des performances 
 
 | Système | MH_01 | V1_02 | V1_03 | Classification |
 |---------|-------|-------|-------|----------------|
-| **OpenVINS** | **0.23%** | **0.24%** | **0.27%** | 🏆 **Excellent** |
-| VINS-Mono | 0.35% | 0.41% | 0.58% | ✅ Good |
-| ORB-SLAM3 | 0.19% | 0.22% | 0.31% | 🏆 Excellent |
+| **OpenVINS** | **0.23%** | **0.24%** | **0.27%** |  **Excellent** |
+| VINS-Mono | 0.35% | 0.41% | 0.58% |  Good |
+| ORB-SLAM3 | 0.19% | 0.22% | 0.31% |  Excellent |
 
 **Point clé** : OpenVINS maintient un drift < 0.3% même sur V1_03_difficult (séquence la plus dure)
 
@@ -292,10 +292,10 @@ evo_rpe tum groundtruth.txt trajectory_estimated.txt --delta 10 --pose_relation 
 ##  Conclusion
 
 **OpenVINS démontre des performances de niveau recherche** sur les benchmarks EuRoC avec :
-- ✅ Précision absolue : **6.3 - 9.1 cm** (comparable ORB-SLAM3, meilleur que VINS-Mono)
-- ✅ Drift ultra-faible : **0.23 - 0.27%** (classification **Excellent VIO**)
-- ✅ Robustesse : Stable du facile au difficile (dégradation < 3cm)
-- ✅ Efficacité : Temps réel sur CPU (23-37s pour 2-3k images)
+-  Précision absolue : **6.3 - 9.1 cm** (comparable ORB-SLAM3, meilleur que VINS-Mono)
+-  Drift ultra-faible : **0.23 - 0.27%** (classification **Excellent VIO**)
+-  Robustesse : Stable du facile au difficile (dégradation < 3cm)
+-  Efficacité : Temps réel sur CPU (23-37s pour 2-3k images)
 
 ---
 
