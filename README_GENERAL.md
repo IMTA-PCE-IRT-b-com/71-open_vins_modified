@@ -56,9 +56,7 @@ Ce projet est documenté en **8 fichiers complémentaires** :
 
 | Document | Contenu | Public | Durée lecture |
 |----------|---------|--------|---------------|
-| **[README_EVALUATION.md](README_EVALUATION.md)** | Résumé exécutif des résultats | Managers, décideurs | 5 min |
-| **[RESULTS_SUMMARY.md](RESULTS_SUMMARY.md)** | Synthèse détaillée avec comparaisons | Ingénieurs | 10 min |
-| **[EVALUATION_REPORT.md](EVALUATION_REPORT.md)** | Rapport technique complet | Chercheurs, R&D | 30 min |
+| **[EVALUATION_REPORT.md](EVALUATION_REPORT.md)** | Rapport technique complet | Chercheurs | 30 min |
 | **[INDEX.md](INDEX.md)** | Index de navigation | Tous | 2 min |
 
 ### 🛠️ Guides Techniques
@@ -67,7 +65,6 @@ Ce projet est documenté en **8 fichiers complémentaires** :
 |----------|---------|--------|---------|
 | **[REPRODUCTION_GUIDE.md](REPRODUCTION_GUIDE.md)** | Commandes pour reproduire résultats | DevOps, CI/CD | Référence |
 | **[TECHNICAL_GUIDE.md](TECHNICAL_GUIDE.md)** | Architecture et algorithmes expliqués | Développeurs | Formation |
-| **[SESSION_SUMMARY.md](SESSION_SUMMARY.md)** | Journal de développement et débogage | Équipe projet | Archive |
 | **[INTEGRATION_STM32.md](INTEGRATION_STM32.md)** | Stratégie de portage embarqué | Firmware engineers | Planning |
 
 ###  Données et Résultats
@@ -85,7 +82,7 @@ results/
 
 ---
 
-## 🚀 Démarrage Rapide
+##  Démarrage Rapide
 
 ### Option 1 : Affichage des Résultats (30 secondes)
 
@@ -374,7 +371,7 @@ graph LR
 
 ---
 
-## 🤝 Contribution et Développement
+## Contribution et Développement
 
 ### Structure du Code
 
@@ -447,9 +444,9 @@ if (vio_manager.initialized()) {
 
 ---
 
-## 📞 Contact et Support
+## Contact et Support
 
-### Ce Fork
+### Ce Fork 
 
 - **Repository** : https://github.com/Yannisloum63/open_vins_modified
 - **Dernière mise à jour** : Décembre 2025
@@ -516,5 +513,4 @@ Ce projet démontre qu'**OpenVINS est prêt pour la production** avec :
 ---
 
 **License** : GPL-3.0 (OpenVINS original)  
-**Contributions** : Documentation et exemples d'intégration par Yannis Loumouamou 
 **Date** : Décembre 2025
