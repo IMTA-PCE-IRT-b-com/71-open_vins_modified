@@ -39,8 +39,8 @@ dpkg -l | grep -E "(libeigen|libceres|libopencv|libboost)"
 mkdir -p ~/workspace
 cd ~/workspace
 
-# Cloner VOTRE fork (remplacer par votre username)
-git clone https://github.com/Yannisloum63/yannis-open_vins.git open_vins
+# Cloner 
+git clone https://github.com/IMTA-PCE-IRT-b-com/71-open_vins_modified.git open_vins
 cd open_vins
 
 # Basculer sur la branche de développement
@@ -110,7 +110,7 @@ cam0 intrinsics = 458.663,457.212,366.834,248.029 | -0.284,0.074,0.000,-0.000
 - `bg/ba` : biais gyroscope/accéléromètre
 - `cam0/1 intrinsics` : calibration caméra
 
-**✅ Si vous voyez ces sorties, OpenVINS fonctionne correctement !**
+**Si vous voyez ces sorties, OpenVINS fonctionne correctement !**
 
 ---
 
@@ -234,7 +234,7 @@ Système initialisé: OUI
 Trajectoire sauvegardée: trajectory_estimated.txt
 ```
 
-**✅ Résultats attendus :**
+**Résultats attendus :**
 - **3682 images** traitées
 - **36812 mesures IMU** synchronisées
 - Fichier `trajectory_estimated.txt` créé avec ~2263 poses
