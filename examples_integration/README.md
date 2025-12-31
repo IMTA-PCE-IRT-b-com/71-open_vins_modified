@@ -136,7 +136,7 @@ Système initialisé: OUI
 
 ---
 
-## 🧪 Validation du système
+## Validation du système
 
 ### Étapes de test complètes
 
