@@ -197,10 +197,10 @@ $$\text{APE}_i = \|\mathbf{T}_{\text{GT},i} \ominus \mathbf{S} \cdot \mathbf{T}_
 $$\text{Drift} = \frac{\text{RPE}_{10m}}{10 \text{ m}} \times 100$$
 
 **Barème de classification** :
-- 🏆 **Excellent VIO** : < 0.5% (OpenVINS : **0.25%**)
-- ✅ Good VIO : 0.5% - 1.5%
-- ⚠️ Acceptable VIO : 1.5% - 3.0%
-- ❌ Poor VIO : > 3.0%
+-  **Excellent VIO** : < 0.5% (OpenVINS : **0.25%**)
+-  Good VIO : 0.5% - 1.5%
+-  Acceptable VIO : 1.5% - 3.0%
+-  Poor VIO : > 3.0%
 
 **Interprétation** : 0.25% drift → **2.5 cm d'erreur tous les 10 mètres**
 
