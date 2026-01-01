@@ -32,29 +32,26 @@
 │
 ├── 📄 EVALUATION_REPORT.md            ← Rapport technique complet
 ├── 📄 INDEX.md                        ← Ce fichier
-├── 🐍 show_final_results.py           ← Script d'affichage formaté
+├──  show_final_results.py           ← Script d'affichage formaté
 │
 ├── results/
 │   ├── 📄 evaluation_results.json     ← Données JSON
 │   │
-│   ├── 📂 euroc_mh_01_easy/           ← MH_01_easy (⭐ Facile)
+│   ├── 📂 euroc_mh_01_easy/           ← MH_01_easy 
 │   │   ├── groundtruth.txt            (36383 poses GT)
 │   │   ├── trajectory_estimated.txt   (2784 poses OpenVINS)
 │   │   └── vio_output.log             (logs système)
 │   │
-│   ├── 📂 euroc_v1_02_medium/         ← V1_02_medium (⭐⭐ Moyen)
+│   ├── 📂 euroc_v1_02_medium/         ← V1_02_medium 
 │   │   ├── groundtruth.txt            (16703 poses GT)
 │   │   ├── trajectory_estimated.txt   (1612 poses OpenVINS)
 │   │   └── vio_output.log
 │   │
-│   └── 📂 euroc_v1_03_difficult/      ← V1_03_difficult (⭐⭐⭐ Difficile)
+│   └── 📂 euroc_v1_03_difficult/      ← V1_03_difficult 
 │       ├── groundtruth.txt            (20933 poses GT)
 │       ├── trajectory_estimated.txt   (2006 poses OpenVINS)
 │       └── vio_output.log
-│
-└── notebooks/
-    ├── openvins_workflow.ipynb        ← Workflow interactif Jupyter
-    └── README.md                      ← Guide d'utilisation notebook
+
 ```
 
 ---
