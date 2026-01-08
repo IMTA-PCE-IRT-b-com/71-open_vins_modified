@@ -36,9 +36,9 @@ Ce document explique **comment fonctionne OpenVINS** au niveau technique : algor
 
 ### Applications
 
-- 🚁 Drones autonomes (DJI, Skydio)
-- 🤖 Robots mobiles (aspirateurs, entrepôts)
-- 🥽 Réalité augmentée (Meta Quest, HoloLens)
+- 🚁 Drones autonomes 
+- 🤖 Robots mobiles
+- 🥽 Réalité augmentée
 - 🚗 Voitures autonomes (complément GPS)
 
 ---
