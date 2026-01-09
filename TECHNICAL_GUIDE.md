@@ -32,7 +32,7 @@ Ce document explique **comment fonctionne OpenVINS** au niveau technique : algor
 |---------|-----------|---------------|-----------|
 | **Caméra** | Drift faible, position absolue | Lent (20 Hz), échoue si texture faible | 20 Hz |
 | **IMU** | Rapide (200+ Hz), toujours actif | Drift rapide (biais), bruit | 200 Hz |
-| **VIO (fusion)** | ✅ Précis + rapide + robuste | Complexe algorithmiquement | 200 Hz |
+| **VIO (fusion)** | Précis + rapide + robuste | Complexe algorithmiquement | 200 Hz |
 
 ### Applications
 
@@ -203,7 +203,7 @@ P(4,4) = 0.001  → σ_px = 0.03 m   (incertitude sur position)
                     │
         ┌───────────┴────────────┐
         │                        │
-     📷 Images              ⚡ IMU (200 Hz)
+     📷 Images               IMU (200 Hz)
      (20 Hz)                     │
         │                        │
         v                        v
