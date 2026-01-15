@@ -15,8 +15,7 @@ OpenVINS démontre des **performances exceptionnelles** sur les 3 niveaux de dif
 -  **Robustesse** : Système stable du plus facile au plus difficile (dégradation minime de 2.8cm)
 -  **Efficacité** : Traitement temps réel (23-37s pour 2-3.5k images)
 
-Le système est **prêt pour déploiement en production** avec des performances au niveau de l'état de l'art.
-
+Ces métriques servent de référence pour la déclinaison embarquée [71-OpenVins_light](https://github.com/IMTA-PCE-IRT-b-com/71-OpenVins_light.git) (STM32H7) après réduction des dépendances.
 ---
 
 ## 📈 Résultats Détaillés
